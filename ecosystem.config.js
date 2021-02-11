@@ -13,10 +13,12 @@ module.exports = {
     development: {
       key: "~/.ssh/id_rsa",
       user: "sshadmin",
-      host: "118.67.128.137",
+      /** Uncomment line below and add ip for your host */
+      // host: "0.0.0.0",
       ref: "origin/master",
       ssh_options: "ForwardAgent=yes",
-      repo: "git@github.com:d2x-addup/back-end.git",
+      /** Uncomment line below and add the link to your github repo */
+      // repo: "git@github.com:organization/repo-name.git",
       path: "/var/www/back-end",
       env: {
         NODE_ENV: "development",

@@ -2,13 +2,12 @@ version: '3.6'
 
 services:
   db:
-    image: mariadb
+    image: postgres
     restart: always
     ports:
-      - "3307:3306"
+      - "5434:5432"
     volumes:
       - ./docker/db/init:/docker-entrypoint-initdb.d
     environment:
-      MYSQL_ROOT_PASSWORD: supersecurepassword
-      MYSQL_USER: docker
-      MYSQL_PASSWORD: supersecurepassword
+      POSTGRES_USER: docker
+      POSTGRES_PASSWORD: supersecurepassword

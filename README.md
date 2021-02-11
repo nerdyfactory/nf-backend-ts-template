@@ -1,4 +1,4 @@
-# back-end
+# Backend-typescript-template
 
 ## Installation
 
@@ -41,14 +41,6 @@ Since scripts are written in TypeScript you need to use `ts-node`:
 $ yarn ts-node path/to/the/script
 ```
 
-`DriveRecords script`
-
-If you want to create drive records with a particular `companyId` then pass in an argument to the script of `companyId`
-
-```
-$ yarn ts-node ./scripts/createDriveRecords <companyId>
-```
-
 ## DB Migration
 
 1. create new migration
@@ -88,17 +80,12 @@ yarn typeorm
 - `dist/`: wepback bundle file
 - `docker/`: docker related file. Currently, it has db init script.
 - `src/`: source codes
-  - `src/converters/`: Conversion code for lidar
   - `src/entities`: Entity definations
   - `src/lib`: Shared library files
   - `src/migrations`: DB migration files
   - `src/resolvers`: [graphql](https://www.apollographql.com/docs/) type defs and resolvers
   - `src/routes`: [express](https://www.expressjs.com/) routes
-  - `src/xviz`: Custom types for XVIZ
   - `src/Api.ts`: API server
-  - `src/Convert.ts`: File to run when we need to convert lidar data(has a separate entrypoint in webpack.config.js)
-  - `src/Stream.ts`: File to run when we need to stream lidar data(has a separate entrypoint in webpack.config.js)
-  - `src/xviz.d.ts`: Typings for xviz module
 - `__test__/`: test scripts
 - `scripts/`: miscellaneous scripts
 - `READ.md`: this file

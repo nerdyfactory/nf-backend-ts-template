@@ -1,9 +1,7 @@
-const path = require("path");
 require("src/lib/loadEnv.ts");
 const { DB_HOST, DB_PORT, DB_USERNAME, DB_PASSWORD, DB_DATABASE } = process.env;
-
 module.exports = {
-  type: "mariadb",
+  type: "postgres",
   host: DB_HOST,
   port: DB_PORT,
   username: DB_USERNAME,

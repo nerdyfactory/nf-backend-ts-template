@@ -9,7 +9,7 @@
     "build": "webpack",
     "lint": "eslint src/ __test__/",
     "ts-node": "ts-node -r tsconfig-paths/register --files",
-    "typeorm": "yarn ts-node __test__/setups/initDB",
+    "typeorm": "yarn ts-node ./node_modules/typeorm/cli.js",
     "initDB": "yarn ts-node __test__/setups/initDB",
     "deploy": "pm2 deploy",
     "serve": " pm2 startOrRestart ecosystem.config.js"
@@ -24,7 +24,7 @@
     "graphql-scalars": "^1.4.1",
     "jsonwebtoken": "^8.5.1",
     "morgan": "^1.10.0",
-    "mysql": "^2.18.1",
+    "pg": "^8.5.1",
     "ts-loader": "^8.0.7",
     "ts-node": "^9.0.0",
     "tsconfig-paths": "^3.9.0",

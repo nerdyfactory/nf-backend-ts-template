@@ -6,7 +6,7 @@ const webpack = require("webpack");
 const path = require("path");
 const nodeExternals = require("webpack-node-externals");
 
-module.exports = (env) => {
+module.exports = (_env) => {
   return {
     entry: {
       Api: "./src/Api.ts",
