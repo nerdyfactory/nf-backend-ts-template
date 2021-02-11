@@ -1,5 +1,33 @@
 # Backend-typescript-template
 
+This template includes
+
+#### Graphql endpoints
+
+- [Graphql](https://graphql.org/)
+- [Apollo](https://apollographql.com/docs/)
+
+#### Express
+
+- [express](https://expressjs.com/)
+
+#### Database
+
+- [postgres](https://www.postgresql.org/docs/)
+
+#### Typeorm
+
+- [typeorm](https://typeorm.io/#/)
+
+#### Linting and formatting
+
+- [eslint](https://eslint.org/)
+- [prettier](https://prettier.io/)
+
+#### Testing
+
+- [jest](https://jestjs.io/)
+
 ## Installation
 
 1. Make sure you have [**node**](https://nodejs.org/), [**yarn**](https://yarnpkg.com/), [**docker**](https://www.docker.com/products/docker-desktop) installed.
