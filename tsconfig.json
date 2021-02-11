@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+      "lib": ["es5", "es6"],
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "target": "es5",
+      "downlevelIteration": true,
+      "allowJs": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "esModuleInterop": true,
+      "baseUrl": ".",
+      "paths": {
+        "src/*": ["src/*"],
+        "__test__/*": ["__test__/*"]
+      }
+    },
+    "include": ["src", "__test__"]
+}
+  
